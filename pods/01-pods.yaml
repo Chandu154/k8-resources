@@ -1,5 +1,5 @@
 apiVersion: v1
-kind: pod  #what type of resouce we are using 
+kind: Pod  #what type of resouce we are using 
 metadata: 
   name: simple-pod  #giving the name to resource
   namespace: roboshop # if we don't mention specific namespaces, it will attach to default namespace 
