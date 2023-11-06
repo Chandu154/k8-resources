@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: pod  #what type of resouce we are using 
+metadata: 
+  name: simple-pod  #giving the name to resource
+  namespace: roboshop # if we don't mention specific namespaces, it will attach to default namespace 
+spec:
+  containers:
+  - name: nginx-simple  # giving the name to our container 
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
