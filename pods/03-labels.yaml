@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod  #what type of resouce we are using 
+metadata: 
+  name: labels
+  labels:
+    environment: production
+    app: nginx 
+spec:
+  containers:
+  - name: nginx-labels  # giving the name to our container 
+    image: nginx
+    ports:
+    - containerPort: 80
